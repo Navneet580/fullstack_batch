@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    /* transition-duration: 1s; */
+
+    /* transition-property: background-color; */
+
+    /* transition-timing-function: ease-in-out; */
+
+    /* transition-timing-function: cubic-bezier(0.64,-0.74, 0.38, 1.7); */
+
+    /* transition-timing-function: ease;
+    transition-delay: 0.5s; */
+
+    /* transition-delay: ease 0.5 all 1s; */
+
+
+    animation-name: play;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+    animation-fill-mode: reverse;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+
+    position: relative;
+
+}
+
+/* div:hover { */
+
+    /* height: 400px;
+    width: 400px; */
+
+    /* transition-duration: 1s; */
+
+    /* background-color: red; */
+
+    /* transform: scale(1.5); */
+    /* transform: scale(0.1); */
+    /* transform: scaleX(1.5); */
+
+    /* transform: rotate(360deg); */
+    /* transform: rotateX(89deg); */
+
+    /* transform: skew(20deg); */
+    /* transform: skew(20deg, 20deg); */
+    /* transform: skewY(30deg); */
+
+    /* transform: translate(300px); */
+    /* transform: translate(50px, 50px); */
+    /* transform: translateY(-200px); */
+    /* transform: translate3d(200px); */
+
+    /* transform: skew(30deg) translate(50px, 50px); */
+/* } */
+
+/* take div{} not hover{} for below property */
+@keyframes play {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+        border-radius: 20px;
+    }
+}
+
+/* div::after {
+    content: "this is content";
+} */
+
+div::before {
+    content: "";
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
