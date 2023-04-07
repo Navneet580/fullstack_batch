@@ -1,0 +1,3 @@
+In DAY-17, we have studied git collaboration. 
+Which is saved in the file "git_coll", on desktop.
+By openinig git_coll file, i've to go collaboration in that file. 
