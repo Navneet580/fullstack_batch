@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let name = "Radhe";
+        name = 'Krishna';
+        name = 01;
+        // console.log(name)
+
+        var hii 
+        hii = 'me';
+        // console.log(hii)
+
+        if (true) {
+            let x = 10
+            // console.log(x)
+        }
+
+        if (true) {
+            var y = 10
+        }
+        // console.log(y)
+
+        // console.log(z)
+        // let z = 10  //error
+
+        // console.log(a)
+        // var a = 19 
+
+        let m = 10;
+        if (true) {
+            // m = 16 // opt: 16
+            let m = 16 // opt: 10
+            // console.log(m)
+        }
+        // console.log(m)
+
+        var n = 10;
+        if (true) {
+            var n = 16
+            // console.log(n)
+        }
+        // console.log(n)
+
+        // let a = 10
+        // let b = a
+        // b = 20
+        // console.log(b)
+        // console.log(a)
+
+        // const a = [1,2,3,4,5]
+        // const b = a
+        // b.push('something')
+        // console.log(a)
+        // console.log(b)
+
+        // const a = [1,2,3,4,5]
+        // a.push(34)
+        // console.log(a)
+        // a.pop()
+        // console.log(a)
+
+        const j = [1,2,3,4,5]
+        // j.shift(45)
+        j.unshift(45)
+        // console.log(j)
+        
+        const k = [1,2,3,4,5]
+        const g = k.unshift(123)
+        // console.log(k)
+        // console.log(g)
+
+        const l = [1,2,3,4,5]
+        const v = l
+        v.push('something')
+        // console.log(l)
+        // console.log(v)
+
+        const a = [1,2,3,4,5]
+        const b = []
+        for (let i=0; i<a.length; i++) {
+            b.push(a[i])
+        }
+        b.push('something')
+        // console.log(a)
+        // console.log(b)
+
+        const f = {
+            name: 'Narayan',
+        }
+        const o = f
+        o.name = 'something'
+        // console.log(f)
+        // console.log(o)
+
+        const t = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+        function iterate(currentValue, currentIndex) {
+            console.log(currentValue, currentIndex)
+        }
+        // t.forEach(iterate)
+        // t.map(iterate)
+
+        const d = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+        function iterate(currentValue, currentIndex) {
+            // return 'Radhe_Krishna'
+            return currentValue
+        }
+        // const newArr = d.forEach(iterate) // opt:- undefined
+        const newArr = d.map(iterate)
+        console.log(newArr)
+        
+     </script>
+</body>
+</html>
