@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice - function</title>
+</head>
+<body>
+    
+    <h1>1. function</h1>
+    <h1>2. Hoisting</h1>
+    <script>
+
+        // function
+
+        // function greet(Name) {
+        //     console.log('Hello ' + Name)
+        // }
+        // const greet2 = function(Name) {
+        //     console.log('Hello ' + Name)
+        // }
+        // greet('Krishna')
+        // greet2('Radhe')
+        
+        // Hoisting
+
+        // greet('Navneet')
+        // greet2('Navneet')
+        // function greet(Name) {
+        //     console.log('Hello ' + Name)
+        // }
+        // const greet2 = function(Name) {
+        //     console.log('Hello ' + Name)
+        // }
+
+        // Function
+        // function greet(Name = 'default') {
+        //     console.log('Hello ' + Name)
+        // }
+        // greet()
+
+        const greet = function(Name) {
+            console.log('Hii ' + Name)
+        }
+        const greet2 = (Name) => {
+            console.log('Hii ' + Name)
+        }
+        // greet('Radha')
+        // greet2('Krishna')
+
+        // const sum = function(a, b) {
+        //     return a + b
+        // }
+        // console.log(sum(1, 2))
+
+        // Arrow Function
+        // const arrowSum = (a, b) => a + b
+        // console.log(arrowSum(5, 2))
+
+        
+        const arrowSum = (a, b) => a + b
+        const multiply = (a) => a * 50
+        // console.log(arrowSum(3, 6))
+        // console.log(multiply(2))
+
+
+        const arr = [1, 2, 3, 4, 5]
+        function callback(item) {
+            return item * 2
+        }
+
+        const newArr = arr.map(callback)
+        const arr2 = arr.map(item => item * 3)
+
+        // console.log(newArr)
+        // console.log(arr2)
+
+        const arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        function cb(element) {
+            if (element % 2 == 0) {
+                // return element
+                return true
+            } else {
+                return false
+            }
+        }
+        // const evenArray = arr3.map(cb)
+        const evenArray = arr3.filter(cb)
+        // console.log(evenArray)
+
+        const newArray = arr3.filter(element => element % 2 === 0)
+        // console.log(newArray)
+
+
+        function cb2(element) {
+            if (element === 99) return element
+        }
+        const result = arr.find(element => element === 5)
+        // console.log(result)
+
+
+
+        const a = 10
+        const b = '10'
+        // to check the value " == "
+        // console.log(a == b)
+        // to check the type " === "
+        // console.log(a === b)
+
+
+        const arr4 = [{
+            name: 'Ram',
+            age: 20
+        }, {
+            name: 'Sita',
+            age: 18
+        }, {
+            name: 'Lakshman',
+            age: 16
+        }, {
+            name: 'Hanuman',
+            age: 12
+        }]
+
+        const result2 = arr4.find(element => element.name === 'Ram')
+        // console.log(result2)
+
+
+
+
+        const greet4 = function() {
+            console.log("Hello")
+        }
+        const greet4Arrow = function() {
+            console.log("Hello")
+        }
+        // console.log(this)
+
+        const ob = {
+            name: "Navneet",
+            greet4: function() {
+                console.log(this)
+            },
+        }
+        // console.log(ob.name)
+        // console.log(ob['name'])
+        ob.greet4()
+
+    </script>
+</body>
+</html>
