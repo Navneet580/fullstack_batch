@@ -1,0 +1,24 @@
+{
+  "name": "fullstack_batch",
+  "version": "1.0.0",
+  "description": "module for fullstack batch fswd 10323-20323",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Navneet580/fullstack_batch.git"
+  },
+  "author": "Navneet Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Navneet580/fullstack_batch/issues"
+  },
+  "homepage": "https://github.com/Navneet580/fullstack_batch#readme",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.4.0",
+    "uuid": "^9.0.0"
+  }
+}
