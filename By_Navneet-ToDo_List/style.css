@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: 1s ease;
+    height: 100vh;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+progress {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    position: fixed;
+    top: 0;
+    transition: 1s ease all;
+}
